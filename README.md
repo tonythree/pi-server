@@ -26,14 +26,14 @@ You should see Active: active (running) in green.
 Create a python virtual environment using pipenv or venv and install requirements.txt: 
 Using venv (tested and working):
 ```
-cd spg50
+cd pi-server
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 Using pipenv:
 ```
-cd spg50
+cd pi-server
 pipenv shell
 pipenv install -r requirements.txt
 ```
