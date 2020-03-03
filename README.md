@@ -1,5 +1,5 @@
 # pi-server
-pi-server is a lightweight webserver flask application for raspberry pi that servers a real-time video streaming from raspberry pi camera.
+pi-server is a raspberry-pi lightweight flask application that serves a real-time video streaming from raspberry pi camera and detect humans in real time using opencv library.
 
 ## Preliminary steps - install NGINX webserver
 Before using a flask app, you should have a webserver installed like nginx or apache. I like nginx, but feel free to use apache. Do not use/install both, as you might experience the two webservers fighting for ports :D. Installing nginx is easy, open up the terminal and run these commands, one after the other:
