@@ -30,11 +30,26 @@ cd spg50
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python webstreaming.py --ip 0.0.0.0 --port 8000
 ```
 Using pipenv:
 ```
 cd spg50
 pipenv shell
 pipenv install -r requirements.txt
+```
+
+## Run flask application and access from raspberry
+Everything is ready, now run:
+```
+python webstreaming.py --ip 0.0.0.0 --port 8000
+```
+Open your raspberry pi chromium browser and put into the browser:
+```
+0.0.0.0:8000
+```
+
+## Access real-time Raspberry Pi camera streaming from your computer.
+Try to access to your raspberry pi from your own computer. In order for this to work, Computer and Raspberry should be connected to the same wi-fi network. First, copy the IP of your raspberry (in my case is 192.168.1.38), and then put in the browser:
+```
+192.168.1.38:8000
 ```
